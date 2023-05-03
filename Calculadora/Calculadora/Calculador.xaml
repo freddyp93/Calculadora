@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.Calculador">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text= "CALCULADORA" HorizontalOptions="Center" TextColor="CadetBlue" FontSize="Large"/>
+            
+            <!--elementos para la calculadora-->
+            <Entry x:Name="txtN1" Placeholder="Ingrese Numero 1"/>
+            <Entry x:Name="txtN2" Placeholder="Ingrese Numero 2"/>
+
+            <Label Text="Seleccione Operacion" FontSize="Medium"/>
+            
+            <!--muestra una breve lista desde los que el usuario puede seleccionar un elemento-->
+            <!--selectedIndezChanged es el evento programable del picker-->
+            <Picker x:Name="pkOperacion" SelectedIndexChanged="pkOperacion_SelectedIndexChanged"/>
+            
+            <Label x:Name="lblResta" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
